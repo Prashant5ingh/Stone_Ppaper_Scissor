@@ -2,13 +2,9 @@ let playerScore = 0;
 let compScore = 0;
 
 let choices = document.querySelectorAll('.choice'); // we can also use 'img' to select all images
-
 let reset = document.querySelector('#reset'); // select the reset button
-
 let msg = document.querySelector('#msg'); // select and update the message element in the HTML
-
 let pScore = document.querySelector('#player-score'); // update the player score in the HTML
-
 let cScore = document.querySelector('#comp-score'); // update the comp score in the HTML
 
 const computerScore = () => {
