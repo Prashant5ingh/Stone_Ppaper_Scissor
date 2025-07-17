@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Removes default spacing and ensures consistent sizing */
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+h1 {
+    background-color: black;
+    color: aquamarine;
+    height: 5rem;
+    line-height: 5rem; /* Vertically center text */
+    text-shadow: 0 0 1rem rgb(167, 164, 164);
+}
+
+/* Choices container */
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between choice items */
+    margin-top: 40px;
+    padding: 50px;
+}
+
+/* Each choice box */
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+}
+
+/* Image inside choices */
+.choice:hover img {
+    opacity: 0.9;
+    border: 8px solid black;
+    transform: scale(1.1); /* Slightly scale on hover */
+    cursor: pointer;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover; /* Ensure image fits the box */
+    border-radius: 50%; /* Circle shape */
+    transition: transform 0.3s ease; /* Smooth scaling */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Scoreboard */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 20px;
+}
+
+#player-score,
+#comp-score {
+    background-color: black;
+    color: aquamarine;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Message and Reset button container */
+.box {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: use flex-wrap or flex-direction if layout needs adjustment */
+}
+
+/* Message styling */
+#msg {
+    font-size: 1.2rem;
+    color: rgb(219, 214, 214);
+    display: inline;
+    background-color: rgb(19, 59, 91);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-inline: 22rem;
+}
+
+/* Reset button */
+#reset {
+    background-color: beige;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgb(56, 46, 46);
+    cursor: pointer;
+}

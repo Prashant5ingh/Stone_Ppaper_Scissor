@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPS Game</title>
+    <link rel="stylesheet" href="./sps.css" />
+</head>
+
+<body>
+
+    <!-- Game Title -->
+    <h1>STONE PAPER SCISSORS GAME</h1>
+
+    <!-- Player Choices -->
+    <div class="choices">
+        <div class="choice" id="stone">
+            <img src="./rock.png" alt="Stone" />
+        </div>
+        <div class="choice" id="paper">
+            <img src="./paper.png" alt="Paper" />
+        </div>
+        <div class="choice" id="scissors">
+            <img src="./scissors.png" alt="Scissors" />
+        </div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score-board">
+        <div class="score">
+            <p id="player-score">0</p>
+            <h2>Player</h2>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <h2>Computer</h2>
+        </div>
+    </div>
+
+    <!-- Message and Reset Button -->
+    <div class="box">
+        <p id="msg">Play Your Move</p>
+        <button id="reset">Reset Game</button>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="./sps.js"></script>
+</body>
+</html>
